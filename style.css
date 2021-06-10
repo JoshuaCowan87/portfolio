@@ -17,12 +17,17 @@ fonts:
 body {
     margin: 0;
     font-family: 'DM Sans';
-    background-color: #ECEBE5;
+    background-color: #e6dca8;
     color: #2F2F2E;
     letter-spacing: .5px;
     line-height: 125%;
 }
-
+.repo-link {
+  color: black
+}
+hr{
+  border-color: rgb(105, 2, 8);
+}
 img {
   display: flex;
   width: 100%;
@@ -37,7 +42,7 @@ a {
 /* --- header and nav --- */
 
 header {
-    background-color: #354854;
+    background-color: rgb(105, 2, 8);
 }
 
 header h1 {
@@ -48,6 +53,21 @@ header h1 {
     font-family: 'Scope One', monospace;
     font-size: 40px;
     color: #ECEBE5
+}
+header p {
+  margin-top: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Scope One', monospace;
+    font-size: 20px;
+    color: #ECEBE5
+}
+.header-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .navbar {
@@ -61,7 +81,7 @@ header h1 {
 
 .navbar li a {
     text-decoration: none;
-    color: #d96e6c;
+    color: #ECEBE5;
     font-size: 20px;
 }
 
@@ -118,14 +138,16 @@ img.headshot {
 }
 
 .portfolio-item {
-  background-color: #354854;
+  background-color: rgb(105, 2, 8);
   color:#ECEBE5;
   padding: 10px;
   border-radius: 5px;
   margin: 10px;
   filter: drop-shadow(9px 9px 9px #2F2F2E)
 }
-
+.skill-item {
+  text-align: center;
+}
 .demonstrated-skills {
   font-style: italic;
   font-weight: 100;
@@ -147,6 +169,8 @@ img.headshot {
   text-align: center;
 }
 
+
+
 form input,
 form textarea {
     width: 100%;
@@ -162,7 +186,7 @@ form textarea {
   border: none;
   font-family: inherit;
   cursor: pointer;
-  background-color: #D96E6C;
+  background-color:rgb(105, 2, 8);
   color: #ECEBE5;
   padding: .25em .75em;
   min-height: 44px;
@@ -186,8 +210,8 @@ form textarea {
   font-weight: 800;
 }
 
-main a:link { color: #D96E6C; }
-main a:visited { color: #D96E6C; }
+main a:link { color: black; }
+main a:visited { color: black; }
 
 /* --- desktop main groups --- */
 
@@ -196,7 +220,7 @@ main a:visited { color: #D96E6C; }
   main {
     margin-left: auto;
     margin-right: auto;
-    max-width: 900px;
+    max-width: 1000px;
   }
 
   section {
@@ -211,21 +235,50 @@ main a:visited { color: #D96E6C; }
     margin-left: 30px;
   }
 
+  .intro-picture-item : {
+    display: column;
+
+  }
+  .skill-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+  
+  
+
+
+  }
+
+
+  .skill-item {
+    background-color: rgb(105, 2, 8);
+    color:#ECEBE5;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    filter: drop-shadow(9px 9px 9px #2F2F2E)
+  }
+
+
   img.headshot {
     margin-top: 30px;
     width: 250px;
   }
 
+  
   main a:hover { color: #e08b89; }
   .submit-button:hover { background-color: #e08b89; }
+  .portfolio-item a:link {color: black}
   .portfolio-item a:hover { color: #e08b89; }
-}
+  
+
 
 /* --- footer --- */
 
 footer h4{
   display: flex;
-  background-color: #354854;
+  background-color:rgb(105, 2, 8);
   color:#ECEBE5;
   font-family: 'Scope One';
   font-size: 20px;
